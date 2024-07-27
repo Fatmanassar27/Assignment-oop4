@@ -1,4 +1,5 @@
 ﻿using Demo.Interface;
+using System.Text;
 
 namespace Demo
 {
@@ -88,7 +89,22 @@ namespace Demo
             //Console.WriteLine(arr2[0]);
             #endregion
 
-            #region 
+            #region shallow copy and deep copy of string bilder
+            //StringBuilder sb = new StringBuilder();
+            //sb = new StringBuilder("fatma");
+            
+            
+            //StringBuilder sb02 = new StringBuilder();
+            //sb02 = sb;
+
+            //Console.WriteLine(sb02);
+            //Console.WriteLine(sb);
+
+            //sb02.Append(" nassar");
+
+            //Console.WriteLine(sb02);
+            //Console.WriteLine(sb);
+
             #endregion
         }
     }
