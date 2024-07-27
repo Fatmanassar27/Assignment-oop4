@@ -34,13 +34,27 @@ namespace Demo
             #endregion
 
             #region interface EX01
-            
+
             //Series series = new Series();
             //Print10Numbers(series);
             //Console.WriteLine("\n*************************************");
             //Series3 series3 = new Series3();
             //Print10Numbers(series3);
 
+            #endregion
+
+            #region interface ex02
+            //Car car = new Car();
+            //car.Borward();
+
+            //Aroplane aroplane = new Aroplane();
+            //aroplane.Borward();
+
+            //IMovable movable = new Aroplane ();
+            //movable.Forward();
+
+            //IFlyable movable2 = new Aroplane ();
+            //movable2.Forward();
             #endregion
         }
     }
