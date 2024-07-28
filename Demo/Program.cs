@@ -1,4 +1,7 @@
-﻿using Demo.Interface;
+﻿using Demo.Iclonable;
+using Demo.Icomparer;
+using Demo.Interface;
+using System.Text;
 
 namespace Demo
 {
@@ -88,8 +91,66 @@ namespace Demo
             //Console.WriteLine(arr2[0]);
             #endregion
 
-            #region 
+            #region shallow copy and deep copy of string bilder
+            //StringBuilder sb = new StringBuilder();
+            //sb = new StringBuilder("fatma");
+
+
+            //StringBuilder sb02 = new StringBuilder();
+            //sb02 = sb;
+
+            //Console.WriteLine(sb02);
+            //Console.WriteLine(sb);
+
+            //sb02.Append(" nassar");
+
+            //Console.WriteLine(sb02);
+            //Console.WriteLine(sb);
+
             #endregion
+
+            #region deep copy of user defind data type 
+            //Employee employee = new Employee();
+            //employee.Id = 1;
+            //employee.Name = "Tota";
+            //employee.Salary = 90000;
+            //Employee employee2 = new Employee();
+
+            //employee2 = (Employee) employee.Clone();
+            //employee2 = new Employee (employee);
+
+            //Console.WriteLine(employee);
+            //Console.WriteLine(employee2);
+            #endregion
+
+            #region icomparable
+            //Employee[] employee = new Employee[4];
+            //employee[0] = new Employee (10 , "fatma" , 7000);
+            //employee[2] = new Employee (20 , "ahmed" , 6000);
+            //employee[1] = new Employee (30 , "aly" , 1000);
+            //employee[3] = new Employee (40 , "mohamed" , 9000);
+
+            //Array.Sort (employee);
+
+            //foreach (Employee emp in employee) 
+            //    Console.WriteLine (emp);
+            #endregion
+
+            #region icomparer
+            //Employee[] employee = new Employee[4];
+            //employee[0] = new Employee (90 , "fatma" , 7000);
+            //employee[2] = new Employee (20 , "ahmed" , 6000);
+            //employee[1] = new Employee (30 , "aly" , 1000);
+            //employee[3] = new Employee (40 , "mohamed" , 9000);
+
+            //Array.Sort (employee,new EmployeeById());
+
+            //foreach (Employee emp in employee) 
+            //    Console.WriteLine (emp);
+            #endregion
+
+
+
         }
     }
 }
